@@ -16,6 +16,8 @@
 		98ED180E28001DDEAD81B91C07BE16C7 /* Pods-QuizzSD_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D09992E5D60988FB2204EBB5902313FF /* Pods-QuizzSD_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B59A9BF52B82E31500E3B405 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A9BF22B82E31500E3B405 /* PrimaryButton.swift */; };
 		B59A9BF62B82E31500E3B405 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A9BF32B82E31500E3B405 /* SecondaryButton.swift */; };
+		B59A9BF82B82E5A500E3B405 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A9BF32B82E31500E3B405 /* SecondaryButton.swift */; };
+		B59A9BF92B82E5A800E3B405 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A9BF22B82E31500E3B405 /* PrimaryButton.swift */; };
 		C8DEF6591F7D15BBA04CADEE1D29D44B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D2ACD29DB662C69F227ECF78C73F16E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		FE532AF099001597D365B7E2733AE1FD /* QuizzSD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 241990E1B9A5FAF0B9FFF821758E6F4C /* QuizzSD-dummy.m */; };
@@ -56,7 +58,7 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7BAB37C0D36C4C5991751560EFB50EAC /* QuizzSD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuizzSD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE282910CE445A30AE7AC3D0B66EB54 /* QuizzSD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QuizzSD.modulemap; sourceTree = "<group>"; };
-		7E18B1634A3140537A2827151B430A2D /* QuizzSD.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = QuizzSD.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7E18B1634A3140537A2827151B430A2D /* QuizzSD.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = QuizzSD.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		88D1D504AEC0869CB34A6DFED481CA92 /* Pods-QuizzSD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzSD_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8A8C0BED90460E167A4C435A9B606F58 /* Pods-QuizzSD_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuizzSD_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		902F3AC35CC5A29A6794E461EDAB5B93 /* QuizzSD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuizzSD.release.xcconfig; sourceTree = "<group>"; };
@@ -373,6 +375,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59A9BF92B82E5A800E3B405 /* PrimaryButton.swift in Sources */,
+				B59A9BF82B82E5A500E3B405 /* SecondaryButton.swift in Sources */,
 				415CFEF7C97FED6965F3EF9EBC2142F3 /* Pods-QuizzSD_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
