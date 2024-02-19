@@ -14,6 +14,8 @@
 		8BA7C21B3382C28FC6779260139711B0 /* Pods-QuizzSD_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4907B70FB90DACE27C6810BED38135F /* Pods-QuizzSD_Tests-dummy.m */; };
 		8C9222C52F4FD95342EE80F508AB881C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A600556A2CA833569CBF85438979A /* ReplaceMe.swift */; };
 		98ED180E28001DDEAD81B91C07BE16C7 /* Pods-QuizzSD_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D09992E5D60988FB2204EBB5902313FF /* Pods-QuizzSD_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B59A9BF52B82E31500E3B405 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A9BF22B82E31500E3B405 /* PrimaryButton.swift */; };
+		B59A9BF62B82E31500E3B405 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A9BF32B82E31500E3B405 /* SecondaryButton.swift */; };
 		C8DEF6591F7D15BBA04CADEE1D29D44B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D2ACD29DB662C69F227ECF78C73F16E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		FE532AF099001597D365B7E2733AE1FD /* QuizzSD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 241990E1B9A5FAF0B9FFF821758E6F4C /* QuizzSD-dummy.m */; };
@@ -38,13 +40,13 @@
 
 /* Begin PBXFileReference section */
 		0F0E3CA71CE6A456F2CB08DF1E4BCD77 /* Pods-QuizzSD_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuizzSD_Example-dummy.m"; sourceTree = "<group>"; };
-		22887F2F9D87E5DA3D3930FF5B3D3CA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		22887F2F9D87E5DA3D3930FF5B3D3CA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		241990E1B9A5FAF0B9FFF821758E6F4C /* QuizzSD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuizzSD-dummy.m"; sourceTree = "<group>"; };
 		25A3970504AD80AEC4861D6E1C7B9C92 /* Pods-QuizzSD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzSD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C754D06F93FFA8DF9798221DB78460B /* Pods-QuizzSD_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuizzSD_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2D16D2D63B57AD277597A5656C0A9125 /* QuizzSD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QuizzSD-Info.plist"; sourceTree = "<group>"; };
 		2EC0EF0DC02E3D9D56AF8A102702C2F8 /* Pods-QuizzSD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzSD_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		31F8AD47C7852E6FAF117D3C62C7A946 /* Pods-QuizzSD_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-QuizzSD_Example"; path = Pods_QuizzSD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F8AD47C7852E6FAF117D3C62C7A946 /* Pods_QuizzSD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizzSD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AAA9C4CF48A32ED62E29C7F52509DE /* Pods-QuizzSD_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuizzSD_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3EAE2B55D3958F945A5DE829CE67496B /* Pods-QuizzSD_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuizzSD_Example.modulemap"; sourceTree = "<group>"; };
 		50CBB15A1E0F3CDC9A38FD12DB34BF8C /* QuizzSD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuizzSD.debug.xcconfig; sourceTree = "<group>"; };
@@ -52,24 +54,26 @@
 		62DFCFBCADD5A0A38BB9088B8669A13F /* Pods-QuizzSD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzSD_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6A3510F1E83E804A204751876DCF9FAE /* Pods-QuizzSD_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuizzSD_Example-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7BAB37C0D36C4C5991751560EFB50EAC /* QuizzSD */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QuizzSD; path = QuizzSD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BAB37C0D36C4C5991751560EFB50EAC /* QuizzSD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuizzSD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE282910CE445A30AE7AC3D0B66EB54 /* QuizzSD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QuizzSD.modulemap; sourceTree = "<group>"; };
-		7E18B1634A3140537A2827151B430A2D /* QuizzSD.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QuizzSD.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7E18B1634A3140537A2827151B430A2D /* QuizzSD.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = QuizzSD.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		88D1D504AEC0869CB34A6DFED481CA92 /* Pods-QuizzSD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzSD_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8A8C0BED90460E167A4C435A9B606F58 /* Pods-QuizzSD_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuizzSD_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		902F3AC35CC5A29A6794E461EDAB5B93 /* QuizzSD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuizzSD.release.xcconfig; sourceTree = "<group>"; };
 		9751FBCDA5CBDACCDCCDC28AAB046724 /* Pods-QuizzSD_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuizzSD_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B11A600556A2CA833569CBF85438979A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = QuizzSD/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		B59A9BF22B82E31500E3B405 /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrimaryButton.swift; path = QuizzSD/Classes/PrimaryButton.swift; sourceTree = "<group>"; };
+		B59A9BF32B82E31500E3B405 /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondaryButton.swift; path = QuizzSD/Classes/SecondaryButton.swift; sourceTree = "<group>"; };
 		B818A383F4240ABDBC72481331A88CC5 /* Pods-QuizzSD_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuizzSD_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C4907B70FB90DACE27C6810BED38135F /* Pods-QuizzSD_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuizzSD_Tests-dummy.m"; sourceTree = "<group>"; };
 		D09992E5D60988FB2204EBB5902313FF /* Pods-QuizzSD_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuizzSD_Example-umbrella.h"; sourceTree = "<group>"; };
 		D5BA2CC30B361132DFF16745B6C8F1F9 /* Pods-QuizzSD_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuizzSD_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D6B1E80F2BFB12F60EC071D7DCEC622F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D6B1E80F2BFB12F60EC071D7DCEC622F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E05E20B741E4AE8D9B58787B5AF5576A /* QuizzSD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuizzSD-umbrella.h"; sourceTree = "<group>"; };
 		EDE805DDA5911852C2C2F4F51514976D /* QuizzSD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuizzSD-prefix.pch"; sourceTree = "<group>"; };
 		FDF164259AE623F9431B06536E98108C /* Pods-QuizzSD_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuizzSD_Tests-umbrella.h"; sourceTree = "<group>"; };
-		FF6D13203161E3306E089D1DC01B25E0 /* Pods-QuizzSD_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-QuizzSD_Tests"; path = Pods_QuizzSD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6D13203161E3306E089D1DC01B25E0 /* Pods_QuizzSD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizzSD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 		44119917AAFFDD7785031B25CFDDADA1 /* QuizzSD */ = {
 			isa = PBXGroup;
 			children = (
+				B59A9BF22B82E31500E3B405 /* PrimaryButton.swift */,
+				B59A9BF32B82E31500E3B405 /* SecondaryButton.swift */,
 				B11A600556A2CA833569CBF85438979A /* ReplaceMe.swift */,
 				36FB3E794B51048C5A568932F6DD97EF /* Pod */,
 				99691BE4A6250CE7474CD79CC86496D1 /* Support Files */,
@@ -165,9 +171,9 @@
 		8DDFD8D028B95AB569DDFA5808D194CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31F8AD47C7852E6FAF117D3C62C7A946 /* Pods-QuizzSD_Example */,
-				FF6D13203161E3306E089D1DC01B25E0 /* Pods-QuizzSD_Tests */,
-				7BAB37C0D36C4C5991751560EFB50EAC /* QuizzSD */,
+				31F8AD47C7852E6FAF117D3C62C7A946 /* Pods_QuizzSD_Example.framework */,
+				FF6D13203161E3306E089D1DC01B25E0 /* Pods_QuizzSD_Tests.framework */,
+				7BAB37C0D36C4C5991751560EFB50EAC /* QuizzSD.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,7 +275,7 @@
 			);
 			name = "Pods-QuizzSD_Tests";
 			productName = Pods_QuizzSD_Tests;
-			productReference = FF6D13203161E3306E089D1DC01B25E0 /* Pods-QuizzSD_Tests */;
+			productReference = FF6D13203161E3306E089D1DC01B25E0 /* Pods_QuizzSD_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		65F4D4CE1D11B10D9526D6FCD9198A2D /* QuizzSD */ = {
@@ -287,7 +293,7 @@
 			);
 			name = QuizzSD;
 			productName = QuizzSD;
-			productReference = 7BAB37C0D36C4C5991751560EFB50EAC /* QuizzSD */;
+			productReference = 7BAB37C0D36C4C5991751560EFB50EAC /* QuizzSD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A3E6711B491BAD5EF3A152FD53AEDE39 /* Pods-QuizzSD_Example */ = {
@@ -306,7 +312,7 @@
 			);
 			name = "Pods-QuizzSD_Example";
 			productName = Pods_QuizzSD_Example;
-			productReference = 31F8AD47C7852E6FAF117D3C62C7A946 /* Pods-QuizzSD_Example */;
+			productReference = 31F8AD47C7852E6FAF117D3C62C7A946 /* Pods_QuizzSD_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -383,6 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59A9BF62B82E31500E3B405 /* SecondaryButton.swift in Sources */,
+				B59A9BF52B82E31500E3B405 /* PrimaryButton.swift in Sources */,
 				FE532AF099001597D365B7E2733AE1FD /* QuizzSD-dummy.m in Sources */,
 				8C9222C52F4FD95342EE80F508AB881C /* ReplaceMe.swift in Sources */,
 			);
@@ -422,7 +430,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-QuizzSD_Tests/Pods-QuizzSD_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-QuizzSD_Tests/Pods-QuizzSD_Tests.modulemap";
@@ -455,7 +463,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/QuizzSD/QuizzSD-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/QuizzSD/QuizzSD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/QuizzSD/QuizzSD.modulemap";
 				PRODUCT_MODULE_NAME = QuizzSD;
@@ -525,8 +533,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -548,7 +555,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/QuizzSD/QuizzSD-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/QuizzSD/QuizzSD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/QuizzSD/QuizzSD.modulemap";
 				PRODUCT_MODULE_NAME = QuizzSD;
@@ -580,7 +587,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-QuizzSD_Example/Pods-QuizzSD_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-QuizzSD_Example/Pods-QuizzSD_Example.modulemap";
@@ -613,7 +620,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-QuizzSD_Tests/Pods-QuizzSD_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-QuizzSD_Tests/Pods-QuizzSD_Tests.modulemap";
@@ -647,7 +654,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-QuizzSD_Example/Pods-QuizzSD_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-QuizzSD_Example/Pods-QuizzSD_Example.modulemap";
