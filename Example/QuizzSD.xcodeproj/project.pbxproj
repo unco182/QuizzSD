@@ -15,6 +15,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		761AD07F27697773F7CB76A2 /* Pods_QuizzSD_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A5D5C8C8CCC5FBDBF32D33 /* Pods_QuizzSD_Tests.framework */; };
 		7991FC5A557E38121543E1E1 /* Pods_QuizzSD_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE82F16B2C4A113885B813C4 /* Pods_QuizzSD_Example.framework */; };
+		B59A9BD52B82D5E600E3B405 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A9BD42B82D5E600E3B405 /* PrimaryButton.swift */; };
+		B59A9BD72B82D60400E3B405 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A9BD62B82D60400E3B405 /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19BDC965485066B63D40D5D3 /* QuizzSD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = QuizzSD.podspec; path = ../QuizzSD.podspec; sourceTree = "<group>"; };
+		19BDC965485066B63D40D5D3 /* QuizzSD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QuizzSD.podspec; path = ../QuizzSD.podspec; sourceTree = "<group>"; };
 		214843DF4657A76862AE10A6 /* Pods-QuizzSD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizzSD_Tests.release.xcconfig"; path = "Target Support Files/Pods-QuizzSD_Tests/Pods-QuizzSD_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		36A5D5C8C8CCC5FBDBF32D33 /* Pods_QuizzSD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizzSD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3924335D5BD114F5F3EA9529 /* Pods-QuizzSD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizzSD_Example.debug.xcconfig"; path = "Target Support Files/Pods-QuizzSD_Example/Pods-QuizzSD_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,9 +45,11 @@
 		607FACE51AFB9204008FA782 /* QuizzSD_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizzSD_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6C34FDFB2E7C21849B381690 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8DCD3208E26A05B5D45B3C6C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6C34FDFB2E7C21849B381690 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8DCD3208E26A05B5D45B3C6C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		982E284FEFC4EEB349B78708 /* Pods-QuizzSD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizzSD_Tests.debug.xcconfig"; path = "Target Support Files/Pods-QuizzSD_Tests/Pods-QuizzSD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B59A9BD42B82D5E600E3B405 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		B59A9BD62B82D60400E3B405 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		BE82F16B2C4A113885B813C4 /* Pods_QuizzSD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizzSD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				B59A9BD32B82D5D800E3B405 /* Components */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for QuizzSD */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -156,8 +161,16 @@
 				982E284FEFC4EEB349B78708 /* Pods-QuizzSD_Tests.debug.xcconfig */,
 				214843DF4657A76862AE10A6 /* Pods-QuizzSD_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B59A9BD32B82D5D800E3B405 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B59A9BD42B82D5E600E3B405 /* PrimaryButton.swift */,
+				B59A9BD62B82D60400E3B405 /* SecondaryButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +240,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -331,6 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59A9BD72B82D60400E3B405 /* SecondaryButton.swift in Sources */,
+				B59A9BD52B82D5E600E3B405 /* PrimaryButton.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -479,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuizzSD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuizzSD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

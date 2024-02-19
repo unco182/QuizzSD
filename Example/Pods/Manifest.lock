@@ -1,0 +1,16 @@
+PODS:
+  - QuizzSD (0.1.0)
+
+DEPENDENCIES:
+  - QuizzSD (from `../`)
+
+EXTERNAL SOURCES:
+  QuizzSD:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QuizzSD: e3f0058fa3c9331d3d3a477fd7e4af95e1e13ff0
+
+PODFILE CHECKSUM: c81d4dac138084a628d30713f8961fdff5a3178b
+
+COCOAPODS: 1.12.1
