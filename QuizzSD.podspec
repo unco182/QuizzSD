@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/unco182/QuizzSD.git', :tag => s.version.to_s }
   s.platform     = :ios, '14.0'
   s.swift_version = '5.0'
-  s.source_files  = 'QuizzSD/Classes/**/*.{swift}'
+  s.source_files  = 'QuizzSD/QuizzSD/Classes/**/*.{swift}'
 end
