@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'QuizzSD'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A SwiftUI Design System for a Quiz App.'
   s.description      = <<-DESC
                        QuizzSD is a design system for a quiz application, inspired by Duolingo, implemented in SwiftUI. It includes reusable components such as primary and secondary buttons, styled according to modern UI principles.
